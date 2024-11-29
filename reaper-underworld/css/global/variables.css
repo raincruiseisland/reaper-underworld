@@ -1,0 +1,44 @@
+:root {
+  --color-primary: #e79aff;
+  --color-primary-dark: #8f44a7;
+  --color-dark: #181818;
+  --color-dark-tint: #242323;
+  --color-dark-tone: #282828;
+  --color-dark-glare: #a3a3a3;
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  --font-base: sans-serif, system-ui;
+  --gutter: 2em;
+  --text-base: clamp(1rem, 0.8987rem + 0.5791vi, 1.333rem);
+  --text-extra-small: clamp(1rem, 0.8288rem + 0.9783vw, 1.5625rem);
+  --text-small: clamp(1.44rem, 1.1935rem + 1.4087vi, 2.25rem);
+  --text-medium: clamp(1.728rem, 1.4322rem + 1.6904vi, 2.7rem);
+  --text-large: clamp(2.0736rem, 1.7186rem + 2.0285vi, 3.24rem);
+  --space-small: clamp(1rem, 0.8288rem + 0.9783vi, 1.5625rem);
+  --space-medium: clamp(1.5rem, 1.2337rem + 1.5217vi, 2.375rem);
+  --space-large: clamp(2rem, 1.6576rem + 1.9565vi, 3.125rem);
+  --measure-compact: 62ch;
+  
+  --selection-color: var(--color-black);
+  --selection-background: var(--color-primary);
+  --focus-ring-width: 2px;
+  --focus-ring-style: solid;
+  --focus-ring-color: var(--color-primary);
+  --link-underline-offset: .25lh;
+  --link-underline-thickness: 2px;
+
+  --transition-settings-default: 0.3s ease-in-out;
+  --svg-size-default: 1em;
+  --global-border-width: 5px;
+  --global-border-style: solid;
+  --global-border-color: var(--color-primary);
+  --global-background: var(--color-dark);
+  --global-color: var(--color-white);
+  --heading-size-large: var(--text-large);
+  --heading-size-medium: var(--text-medium);
+  --heading-size-small: var(--text-small);
+  --heading-size-extra-small: var(--text-extra-small);
+
+  --landmark-region-space: var(--space-small);
+}

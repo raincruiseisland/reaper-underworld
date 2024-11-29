@@ -1,0 +1,8 @@
+.wrapper {
+  --_max-width: 1200px;
+  --_padding: 25px;
+
+  width: min(calc(100% - var(--_padding) * 2), var(--_max-width));
+  margin-inline: auto;
+  container-type: inline-size;
+}

@@ -1,0 +1,15 @@
+[class*="auto-grid"] {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--auto-grid-column-gap, var(--gutter));
+  row-gap: var(--auto-grid-row-gap, var(--gutter));
+}
+[class*="auto-grid"] > * {
+  min-width: min(100%, var(--auto-grid-min-size, 16rem));
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.auto-grid--thirds {
+  --auto-grid-min-size: 22rem;
+}
