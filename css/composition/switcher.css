@@ -1,0 +1,37 @@
+@supports (container-type: inline-size) {
+  .switcher {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: var(--switcher-vertical-alignment, center);
+    column-gap: var(--switcher-column-gap, var(--gutter));
+    row-gap: var(--switcher-row-gap, var(--gutter));
+  }
+  
+  .switcher > * {
+    flex-basis: calc((45rem - 100%) * 999);
+    flex-grow: 1;
+  }
+}
+
+/* Container support block */
+@supports not (container-type: inline-size) {
+  .switcher {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: var(--switcher-vertical-alignment, center);
+    column-gap: var(--switcher-column-gap, var(--gutter));
+    row-gap: var(--switcher-row-gap, var(--gutter));
+  }
+  
+  .switcher > * {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  @media (min-width: 45rem) {
+    .switcher {
+      flex-direction: row;
+    }
+  }
+}

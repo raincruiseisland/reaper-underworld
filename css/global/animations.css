@@ -1,0 +1,19 @@
+@keyframes phase-in {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  to {
+    opacity: auto;
+    filter: blur(0);
+  }
+}
+[data-animation="phase-in"] {
+  animation: phase-in 2.5s ease-in-out;
+}
+
+@media (prefers-reduced-motion) {
+  [data-animation="phase-in"] {
+    animation: none !important;
+  }
+}
