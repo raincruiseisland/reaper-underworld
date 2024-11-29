@@ -1,0 +1,30 @@
+.heading-extra-small,
+.heading-small,
+.heading-medium,
+.heading-large {
+  display: block;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.heading-extra-small {
+  font-size: var(--heading-size-extra-small);
+}
+.heading-small {
+  font-size: var(--heading-size-small);
+}
+.heading-medium {
+  font-size: var(--heading-size-medium);
+}
+.heading-large {
+  font-size: var(--heading-size-large);
+}
+
+.icon-medium {
+  width: 2em;
+  height: 2em;
+}
+
+.icon-large {
+  width: 6em;
+  height: auto;
+}
