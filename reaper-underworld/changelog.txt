@@ -1,3 +1,0 @@
-- switcher selector to [class|=""]
-- p tag line height on details
-- list style type vs ::webkit one
